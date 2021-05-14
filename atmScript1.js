@@ -253,9 +253,13 @@ function atmTransactions(usersDetailArr) {
                                     <div class="col" style="text-align: center;">Amount</div>
                                 </div>`;
                                 
-                var transArray = userObject.transactions;
+                 var transArray = userObject.transactions;
+                 var transLenght = transArray.length;
 
-                for (var i = 0; i < i < transArray.length; i++ ) {
+                 if (transArray.length > 10)
+                    transLenght = 10;
+
+                 for (var i = 0; i < transLenght; i++ ) {
 
                     var divbackground = "#9edfaf";
 
