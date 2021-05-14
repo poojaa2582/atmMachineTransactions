@@ -255,7 +255,7 @@ function atmTransactions(usersDetailArr) {
                                 
                 var transArray = userObject.transactions;
 
-                for (var i = 0; i < 10; i++ ) {
+                for (var i = 0; i < i < transArray.length; i++ ) {
 
                     var divbackground = "#9edfaf";
 
